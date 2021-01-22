@@ -98,13 +98,16 @@
     height: 72px;
     border-radius: 60px;
     border: 2px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     transition: 100ms;
 
     a {
-
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: red;
         color: #fff;
         font-family: $secondary-font;
         font-weight: 700;
@@ -149,6 +152,11 @@
         background: $color-primary;
 
         a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 18px;
             // line-height: 28px;
         }
@@ -194,6 +202,11 @@
         font-size: 24px;
         line-height: 28px;
         text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
             .action-btn {
