@@ -1,0 +1,284 @@
+.main-services {
+    height: auto;
+    width: 100%;
+    // border: 2px solid yellow;
+    // background-color: pink;
+
+    .hero {
+        // border: 2px solid red;
+        background-image: url('../assets/Rectangle\ 244.png');
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        // position: relative;
+        width: 100%;
+        height: 545px;
+        
+        .sm {
+            display: none;
+        }
+
+        h1 {
+            color: #fff;
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 65px;
+            line-height: 105px;
+
+            &:first-of-type{
+                animation: tiles 1s;
+                
+            }
+
+            &:nth-of-type(2){
+                animation: tiles 2s;
+            }
+        }
+ 
+    }
+}
+
+.service-desc {
+    // margin-top: 200px;
+    // border: 2px solid green;
+    // margin-bottom: should be 55px;
+
+    .mobile-service-img {
+        display: none !important;
+    }
+    
+}
+.single-service {
+    width: 1271px;
+    height: 546px;
+    margin: 40px auto;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+
+    .service-img {
+        position: relative;
+
+
+        .card--icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+           
+            
+            .icon {
+                position: absolute;
+                left: 20px;
+                top: 20px;
+            }
+        }
+    }
+
+    .service-text {
+        width: 576px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+       h3 { 
+            font-family: $primary-font;
+            font-weight: 700;
+            color: $color-primary;
+            font-size: 30px;
+            line-height: 47px;
+        }
+
+        p {
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 45px;
+        }
+    }
+}
+
+.single-service-right {
+    width: 1271px;
+    height: 546px;
+    margin: 40px auto;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .service-img-right {
+        position: relative;
+
+        .card--icon--right {
+            position: absolute;
+            right: 0;
+            top: 0;
+           
+            
+            .icon-right {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+        }
+    }
+
+    .service-text-right {
+        width: 576px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+       h3 { 
+            font-family: $primary-font;
+            font-weight: 700;
+            color: $color-primary;
+            font-size: 30px;
+            line-height: 47px;
+        }
+
+        p {
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 100vw;
+        background: linear-gradient(180deg, #F2F7FF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
+    //    background-size: cover;
+        // background-color: red;
+        overflow-x: hidden !important;
+        background-repeat: no-repeat;
+    }
+
+
+// hero section
+
+
+
+.service-desc {
+    // margin-top: 200px;
+
+    .mobile-service-img {
+        display: block !important;
+    }
+
+    .main-service-img {
+        display: none !important;
+    }
+
+    .service-text, .service-text-right {
+        width: 310px;
+        height: 385px;
+        display: flex;
+        // background-color: red;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center !important;
+
+       h3 { 
+            font-family: $primary-font;
+            font-weight: 700;
+            color: $color-primary;
+            font-size: 20px;
+            line-height: 31px;
+        }
+
+        p {
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+
+    .service-img-right {
+
+        .card--icon--right {
+            width: 101px;
+            height: 88px;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            img:first-of-type {
+                width: 100%;
+            }
+           
+            .icon-right {
+                width: 37px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+        }
+    }
+
+    .service-img {
+
+        .card--icon {
+            width: 101px;
+            height: 88px;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            img:first-of-type {
+                width: 100%;
+            }
+           
+            .icon {
+                width: 27px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+
+            }
+
+            .small {
+                width: 23px;
+                // border: 2px solid yellow;
+            }
+        }
+    }
+    
+    .main-service-img {
+        width: 100%;
+        height: 226px;
+
+        
+    }
+    .single-service {
+        display: flex;
+        flex-direction: column;
+        height: 617px;
+        width: 310px;
+        margin-top: 50px;
+    }
+
+    .single-service-right {
+       margin-top: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 617px;
+        width: 310px;
+        margin-top: 50px;
+    }
+}
+
+
+}

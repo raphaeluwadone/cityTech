@@ -1,0 +1,112 @@
+.city-advantage {
+    position: relative;
+    width: 1183px;
+    height: 528px;
+    margin: 200px auto;
+
+
+    h1 {
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 75px;
+        color: $color-primary;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .advantage {
+        height: 77%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .video {
+        width: 48%;
+        height: 100%;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: -10%;
+            // background-color: #fff;
+        }
+    }
+
+    .advantage-text{
+        width: 48%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    p {
+        font-family: $secondary-font;
+        font-size: 18px;
+        line-height: 45px;
+    }
+}
+
+
+@media screen and (max-width: 375px)  {
+    .city-advantage {
+        height: 526px;
+        width: 310px;
+        margin: 100px auto;
+        display: flex !important;
+        justify-content: space-between;
+        flex-direction: column;
+    
+        h1 {
+
+            width: 100%;
+            font-size: 20px;
+            line-height: 31px;
+            color: $color-primary;
+            position: static;
+            transform: translate(0);
+            background-color: #fff;
+            word-wrap: none;
+            text-align: center;
+        }
+        
+        .advantage {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between;
+            height: 494px !important;
+            position: static;
+
+            p {
+                font-size: 14px;
+                line-height: 23px;
+                text-align: center;
+            }
+        }
+
+        .advantage-text {
+            width: 100%;
+            height: 500px;
+            position: static;
+            align-items: center;
+        }
+
+
+        .video {
+            width: 100%;
+            height: 207px;
+
+            img {
+                width: 100%;
+                position: static;
+            }
+        }
+    }
+} 

@@ -1,0 +1,114 @@
+
+
+.contact-main {
+    // background-color: red;
+    height: 100vh;
+    nav {
+       
+        ul {
+            // background-color: pink;
+            transform: translateX(-50%);
+        }
+    }
+
+    .contact-form {
+        position: relative;
+        display: flex;
+        // align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        // background-color: yellow;
+
+        .cloud-vector {
+            position: absolute;
+            right: -50px;
+            z-index: -5;
+            transform: translateY(30%);
+        }
+
+        .contact-dots {
+            position: absolute;
+            left: 30%;
+            top: 5%;
+            z-index: -2;
+        }
+
+        .contact-text {
+            margin-top: 60px;
+            width: 517px;
+            height: 306px;
+            // background-color: pink;
+    
+            h2 {
+                color: $color-primary;
+                font-family: $primary-font;
+                font-weight: 700;
+                font-size: 65px;
+                line-height: 102px;
+            }
+            p {
+                color: $color-alternate;
+                font-family: $primary-font;
+                margin-top: 30px;
+                font-size: 24px;
+                line-height: 36px;
+            }
+    
+        }
+        
+        .form {
+            width: 640px;
+            background-color: #fff;
+            height: 588px;
+            box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+            // background-color: cyan;
+            // padding: 30px;
+            border-radius: 60px;
+
+            form {
+                // background-color: pink;
+                height: 440px;
+                width: 500px;
+                margin: 60px auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                input[type=text] {
+                    display: block;
+                    width: 500px;
+                    height: 57px;
+                    margin: 20px 0;
+                    border: 0;
+                    padding: 10px;
+                    border-bottom: 1px solid #000000;
+
+                    &::placeholder {
+                        color: $color-alternate;
+                        font-family: $secondary-font;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
+                }
+
+                input[type=submit] {
+                    height: 63px;
+                    width: 235px;
+                    margin-top: 40px;
+                    border: 1px solid $color-primary;
+                    border-radius: 200px;
+                    background-color: #fff;
+                    cursor: pointer;
+                    color: $color-primary;
+                    font-family: $secondary-font;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                }
+            }
+    
+        }
+    }
+}

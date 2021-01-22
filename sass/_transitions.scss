@@ -1,0 +1,30 @@
+@keyframes tiles {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        transform: translateY(-110%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes liftup {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-110%);
+        opacity: 0;
+    }
+}
